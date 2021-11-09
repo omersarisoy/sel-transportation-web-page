@@ -1,0 +1,419 @@
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: white;
+    z-index: 999;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 170px;
+}
+
+.header-container {
+    a {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.58);
+        font-weight: 400;
+        transition: 0.4s;
+
+        &.search {
+            color: #000;
+            font-weight: bold;
+            font-size: 12px;
+        }
+    }
+
+    :hover {
+        color: #c32b24;
+    }
+
+    svg {
+        color: #000;
+        font-weight: bold;
+        transform: rotate(90deg);
+        width: 6px;
+        margin-left: 8px;
+    }
+
+    span {
+        border-bottom: 1px solid #dedede;
+        width: 130px;
+    }
+}
+
+.dot {
+    position: relative;
+    padding-left: 50px;
+
+    &::before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #dedede;
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+}
+
+.header-wrapper {
+    height: 170px;
+}
+
+.main {
+    height: 600px;
+    // border: 3px solid red;
+    margin-top: 200px;
+    display: flex;
+}
+
+.left-part {
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-img {
+    position: relative;
+    margin-left: auto;
+
+    &::after {
+        content: "";
+        width: 80px;
+        height: 80px;
+        background-color: #c32b24;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translate(50%, 50%);
+        opacity: 0.6;
+    }
+}
+
+.left-img {
+    position: relative;
+    margin-right: auto;
+
+    &::after {
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: #2b5fab;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(-50%, -50%);
+        opacity: 0.6;
+    }
+}
+
+.footer-container {
+    width: 100vw;
+    height: 300px;
+    background-color: #fafafa;
+    margin-top: 150px;
+}
+
+.footer-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccd8e9;
+    padding: 60px 0;
+
+    a {
+        font-size: 25px;
+        color: #0d0d0d;
+    }
+
+    :hover {
+        color: #c32b24;
+    }
+}
+
+.info {
+    position: relative;
+    padding-left: 25px;
+
+    &::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #fc5447;
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+}
+
+.iletişim-button {
+    padding: 20px 20px;
+    font-size: 22px;
+    background: transparent;
+    border: 1px solid rgba(112, 112, 112, 0.22);
+
+    &:hover {
+        color: white;
+        background: black;
+    }
+}
+
+.footer-down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+
+    p {
+        span {
+            color: black;
+            font-weight: bold;
+        }
+    }
+}
+
+.right-part {
+    width: 500px;
+    height: 500px;
+    // border: 3px solid red;
+    // margin: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+        font-weight: bold;
+        font-size: 40px;
+        color: #000;
+        margin-bottom: 40px;
+        position: relative;
+        padding-left: 20px;
+
+        &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: #fc5447;
+            position: absolute;
+            top: 15px;
+            left: 0;
+        }
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+        color: #6c6c6c;
+        margin-bottom: 40px;
+    }
+
+    button {
+        background-color: transparent;
+        padding: 20px 25px;
+        border: 3px solid #fafafa;
+        margin-right: 10px;
+        color: #2b5fab;
+        font-size: 17px;
+    }
+
+    span {
+        margin-left: 10px;
+    }
+}
+
+.about {
+    margin-top: 200px;
+    // height: 300px;
+    display: flex;
+    flex-direction: column;
+    // border: 3px solid #C32B24;
+}
+
+.title {
+    display: flex;
+    align-items: flex-end;
+    // justify-content: center;
+    border: 3px solid #C32B24;
+    height: 120px;
+
+    h1 {
+        font-weight: 300;
+        font-size: 55px;
+        color: #000;
+        position: relative;
+        padding-left: 20px;
+
+        &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: #fc5447;
+            position: absolute;
+            left: 0;
+            top: 20px;
+        }
+    }
+}
+
+.bread-container {
+    background-color: #fafafa;
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+
+    ol {
+        display: flex;
+        align-items: center;
+        // border: 3px solid red;
+        margin: 0;
+
+        li {
+            font-weight: 300;
+            font-size: 20px;
+            color: #191919;
+            position: relative;
+            margin-right: 20px;
+        }
+    }
+}
+
+.home-bread {
+    width: 80px;
+    height: 80px;
+    background-color: #F55447;
+
+    position: relative;
+
+    &:hover {
+        background-color: #c32b24;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url("https://www.seltransport.com/sellojistik/assets/img/svg/home.svg");
+        width: 29px;
+        height: 26px;
+        transform: translate(25px, 25px);
+    }
+}
+
+.about-up-image {
+    background-image: url("https://www.seltransport.com/sellojistik/dosyalar/sayfa/1_2.jpg?m=1577220431");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 514px;
+    width: 92%;
+    float: right;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 100px;
+        height: 100px;
+        background-color: #2b5fab;
+        position: absolute;
+        opacity: 0.8;
+    }
+}
+
+.about-up-text {
+    h6 {
+        font-weight: bold;
+        font-size: 15px;
+        color: #2b5fab;
+        margin-bottom: 60 px;
+    }
+}
+
+.hero {
+    .swiper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper-pagination{
+        // border: 3px solid red;
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        height: 100%;
+
+      }
+
+      .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        color: #000;
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.2);
+        position: relative;
+
+        // &::after{
+        //     content: "";
+        //     position: absolute;
+        //     border: 3px solid black;
+        //     top: 50px;
+        //     // width: 1px;
+        //     // height: 60px;
+        //     // background-color: black;
+        //     // bottom: 0;
+        // }
+      }
+
+      .swiper-pagination-bullet-active {
+        color: #fff;
+        background: #007aff;
+      }
+}
+
+.page-title {
+    background-color: #fafafa;
+
+}
