@@ -7,5 +7,8 @@ $(document).ready(function(){
         return '<span class="' + className + '">' + (index + 1) + "</span>";
       },
     },
+    autoplay: {
+      delay: 3000,
+    },
   });
-  });
+});

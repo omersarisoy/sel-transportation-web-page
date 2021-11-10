@@ -1,0 +1,165 @@
+.page-title {
+  display: flex;
+  align-items: flex-end;
+  height: 120px;
+  position: relative;
+}
+.page-title h1 {
+  font-weight: 300;
+  font-size: 55px;
+  color: #000;
+  position: relative;
+  padding-left: 20px;
+}
+.page-title h1::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fc5447;
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+
+.bread-container {
+  background-color: #fafafa;
+  height: 120px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.bread-container ol {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.bread-container ol li {
+  font-weight: 300;
+  font-size: 20px;
+  color: #191919;
+  position: relative;
+  margin-right: 20px;
+}
+
+.home-bread {
+  width: 80px;
+  height: 80px;
+  background-color: #F55447;
+  position: relative;
+}
+.home-bread:hover {
+  background-color: #c32b24;
+}
+.home-bread::before {
+  content: "";
+  position: absolute;
+  background-image: url("https://www.seltransport.com/sellojistik/assets/img/svg/home.svg");
+  width: 29px;
+  height: 26px;
+  transform: translate(25px, 25px);
+}
+
+.page-up {
+  height: 450px;
+  position: relative;
+}
+.page-up .image-container {
+  position: absolute;
+  right: 0;
+}
+
+.about-up-image {
+  background-image: url("https://www.seltransport.com/sellojistik/dosyalar/sayfa/1_2.jpg?m=1577220431");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  position: relative;
+}
+.about-up-image::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: #2b5fab;
+  position: absolute;
+  opacity: 0.8;
+}
+
+.about-up-text {
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+.about-up-text h6 {
+  font-weight: bold;
+  font-size: 15px;
+  color: #2b5fab;
+  margin-bottom: 60px;
+}
+.about-up-text p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  color: #6c6c6c;
+}
+
+.page-down {
+  height: 510px;
+  position: relative;
+}
+
+.about-down-image {
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.picture {
+  height: 500px;
+}
+
+.about-down-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-down-text div {
+  height: 500px;
+}
+.about-down-text h1 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #000;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 20px;
+}
+.about-down-text h1::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fc5447;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.about-down-text p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #6c6c6c;
+  margin-bottom: 50px;
+}
+.about-down-text p span {
+  color: #2980b9;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: underline;
+  font-style: italic;
+}/*# sourceMappingURL=about.css.map */

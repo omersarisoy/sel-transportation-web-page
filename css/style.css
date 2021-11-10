@@ -139,61 +139,147 @@ table {
   border-spacing: 0;
 }
 
-header {
+.header {
+  height: 170px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   left: 0;
-  right: 0;
   top: 0;
-  background: white;
-  z-index: 999;
+  right: 0;
+  z-index: 99;
 }
-
-.header-container {
+.header .container {
+  padding: 0;
+}
+.header .container > ul {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  height: 170px;
+  justify-content: space-between;
 }
-
-.header-container a {
+.header .container > ul > li {
+  position: relative;
+}
+.header .container > ul > li a {
   font-size: 20px;
   color: rgba(0, 0, 0, 0.58);
   font-weight: 400;
+}
+.header .container > ul > li .hover-menu {
+  background-color: #2b5fab;
+  width: 175px;
+  border-radius: 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: -8rem;
+  padding: 25px 20px 25px 35px;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+.header .container > ul > li .hover-menu ul {
+  position: relative;
+}
+.header .container > ul > li .hover-menu ul::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fc5447;
+  position: absolute;
+  top: -2rem;
+  right: 50%;
+}
+.header .container > ul > li .hover-menu ul li {
+  padding: 10px;
+}
+.header .container > ul > li .hover-menu ul li a {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  position: relative;
+}
+.header .container > ul > li .hover-menu ul li a:hover {
+  color: white;
+  padding-left: 8px;
+  transition: 0.5s;
+}
+.header .container > ul > li .hover-menu ul li a:hover::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #fc5447;
+  position: absolute;
+  left: -5px;
+  top: 5px;
   transition: 0.4s;
 }
-.header-container a.search {
+.header .container > ul > li:hover .hover-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.header .container .search a {
   color: #000;
   font-weight: bold;
   font-size: 12px;
 }
-.header-container :hover {
-  color: #c32b24;
-}
-.header-container svg {
+.header .container .lang > a {
   color: #000;
   font-weight: bold;
-  transform: rotate(90deg);
-  width: 6px;
-  margin-left: 8px;
+  font-size: 12px;
 }
-.header-container span {
-  border-bottom: 1px solid #dedede;
-  width: 130px;
+.header .container .lang .hover-tr {
+  background-color: #2b5fab;
+  width: 75px;
+  border-radius: 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: -7rem;
+  padding: 20px 25px;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
 }
-
-.dot {
+.header .container .lang .hover-tr ul {
   position: relative;
-  padding-left: 50px;
 }
-.dot::before {
+.header .container .lang .hover-tr ul::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fc5447;
+  position: absolute;
+  top: -1.8rem;
+  left: 5px;
+}
+.header .container .lang .hover-tr ul li {
+  padding: 5px;
+}
+.header .container .lang .hover-tr ul li a {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  position: relative;
+}
+.header .container .lang .hover-tr ul li a:hover {
+  color: white;
+  padding-left: 5px;
+  transition: 0.5s;
+}
+.header .container .lang .hover-tr ul li a:hover::after {
   content: "";
   width: 5px;
   height: 5px;
-  border-radius: 50%;
-  background-color: #dedede;
+  background-color: #fc5447;
   position: absolute;
-  left: 0;
-  top: 10px;
+  left: -5px;
+  top: 5px;
+  transition: 0.4s;
+}
+.header .container .lang:hover .hover-tr {
+  visibility: visible;
+  opacity: 1;
 }
 
 .header-wrapper {
@@ -202,8 +288,9 @@ header {
 
 .main {
   height: 600px;
-  margin-top: 200px;
+  margin-top: 100px;
   display: flex;
+  margin-bottom: 150px;
 }
 
 .left-part {
@@ -248,7 +335,6 @@ header {
   width: 100vw;
   height: 300px;
   background-color: #fafafa;
-  margin-top: 150px;
 }
 
 .footer-up {
@@ -347,99 +433,6 @@ header {
   margin-left: 10px;
 }
 
-.about {
-  margin-top: 200px;
-  display: flex;
-  flex-direction: column;
-}
-
-.title {
-  display: flex;
-  align-items: flex-end;
-  border: 3px solid #C32B24;
-  height: 120px;
-}
-.title h1 {
-  font-weight: 300;
-  font-size: 55px;
-  color: #000;
-  position: relative;
-  padding-left: 20px;
-}
-.title h1::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  background-color: #fc5447;
-  position: absolute;
-  left: 0;
-  top: 20px;
-}
-
-.bread-container {
-  background-color: #fafafa;
-  height: 120px;
-  display: flex;
-  align-items: flex-end;
-  padding: 0;
-}
-.bread-container ol {
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
-.bread-container ol li {
-  font-weight: 300;
-  font-size: 20px;
-  color: #191919;
-  position: relative;
-  margin-right: 20px;
-}
-
-.home-bread {
-  width: 80px;
-  height: 80px;
-  background-color: #F55447;
-  position: relative;
-}
-.home-bread:hover {
-  background-color: #c32b24;
-}
-.home-bread::before {
-  content: "";
-  position: absolute;
-  background-image: url("https://www.seltransport.com/sellojistik/assets/img/svg/home.svg");
-  width: 29px;
-  height: 26px;
-  transform: translate(25px, 25px);
-}
-
-.about-up-image {
-  background-image: url("https://www.seltransport.com/sellojistik/dosyalar/sayfa/1_2.jpg?m=1577220431");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 514px;
-  width: 92%;
-  float: right;
-  position: relative;
-}
-.about-up-image::after {
-  content: "";
-  width: 100px;
-  height: 100px;
-  background-color: #2b5fab;
-  position: absolute;
-  opacity: 0.8;
-}
-
-.about-up-text h6 {
-  font-weight: bold;
-  font-size: 15px;
-  color: #2b5fab;
-  margin-bottom: 60 px;
-}
-
 .hero .swiper {
   width: 100%;
   height: 100%;
@@ -463,12 +456,11 @@ header {
 }
 .hero .swiper-pagination {
   position: absolute;
-  top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-end;
-  height: 100%;
+  margin-bottom: 350px;
 }
 .hero .swiper-pagination-bullet {
   width: 20px;
@@ -479,7 +471,6 @@ header {
   color: #000;
   opacity: 1;
   background: rgba(0, 0, 0, 0.2);
-  position: relative;
 }
 .hero .swiper-pagination-bullet-active {
   color: #fff;
@@ -487,5 +478,167 @@ header {
 }
 
 .page-title {
+  display: flex;
+  align-items: flex-end;
+  height: 120px;
+  position: relative;
+}
+.page-title h1 {
+  font-weight: 300;
+  font-size: 55px;
+  color: #000;
+  position: relative;
+  padding-left: 20px;
+}
+.page-title h1::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fc5447;
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+
+.bread-container {
   background-color: #fafafa;
+  height: 120px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.bread-container ol {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.bread-container ol li {
+  font-weight: 300;
+  font-size: 20px;
+  color: #191919;
+  position: relative;
+  margin-right: 20px;
+}
+
+.home-bread {
+  width: 80px;
+  height: 80px;
+  background-color: #F55447;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.home-bread:hover {
+  background-color: #c32b24;
+}
+.home-bread i {
+  color: white;
+}
+
+.page-up {
+  height: 450px;
+  position: relative;
+}
+.page-up .image-container {
+  position: absolute;
+  right: 0;
+}
+
+.about-up-image {
+  background-image: url("https://www.seltransport.com/sellojistik/dosyalar/sayfa/1_2.jpg?m=1577220431");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  position: relative;
+  margin-left: 80px;
+}
+.about-up-image::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: #2b5fab;
+  position: absolute;
+  opacity: 0.8;
+}
+
+.about-up-text {
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+.about-up-text h6 {
+  font-weight: bold;
+  font-size: 15px;
+  color: #2b5fab;
+  margin-bottom: 60px;
+}
+.about-up-text p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  color: #6c6c6c;
+}
+
+.page-down {
+  height: 510px;
+  position: relative;
+}
+
+.about-down-image {
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 80px;
+}
+
+.picture {
+  height: 500px;
+}
+
+.about-down-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-down-text div {
+  height: 500px;
+}
+.about-down-text h1 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #000;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 20px;
+}
+.about-down-text h1::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fc5447;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.about-down-text p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #6c6c6c;
+  margin-bottom: 50px;
+}
+.about-down-text p span {
+  color: #2980b9;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: underline;
+  font-style: italic;
 }/*# sourceMappingURL=style.css.map */
