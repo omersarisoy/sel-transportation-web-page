@@ -189,9 +189,8 @@ table {
   border-radius: 1rem;
   position: absolute;
   left: 50%;
-  bottom: -8rem;
   padding: 25px 20px 25px 35px;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, 25%);
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s ease;
@@ -219,7 +218,7 @@ table {
 .header .container > ul > li .hover-menu ul li a:hover {
   color: white;
   padding-left: 8px;
-  transition: 0.5s;
+  transition: all 0.4s ease;
 }
 .header .container > ul > li .hover-menu ul li a:hover::after {
   content: "";
@@ -229,9 +228,77 @@ table {
   position: absolute;
   left: -5px;
   top: 5px;
-  transition: 0.4s;
+}
+.header .container > ul > li .hover-service {
+  background-color: #2b5fab;
+  width: 350px;
+  border-radius: 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: -2rem;
+  padding: 25px 20px 25px 35px;
+  transform: translate(-50%, 100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+.header .container > ul > li .hover-service ul {
+  position: relative;
+}
+.header .container > ul > li .hover-service ul::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fc5447;
+  position: absolute;
+  top: -40px;
+  right: 50%;
+}
+.header .container > ul > li .hover-service ul li {
+  padding-bottom: 10px;
+}
+.header .container > ul > li .hover-service ul li a {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  position: relative;
+}
+.header .container > ul > li .hover-service ul li a:hover {
+  color: white;
+  padding-left: 8px;
+  transition: all 0.4s ease;
+}
+.header .container > ul > li .hover-service ul li a:hover::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #fc5447;
+  position: absolute;
+  left: -5px;
+  top: 5px;
+}
+.header .container > ul > li .hover-service ul p {
+  color: #fff;
+  position: relative;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.header .container > ul > li .hover-service ul p::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  left: 0;
+  top: 2px;
 }
 .header .container > ul > li:hover .hover-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.header .container > ul > li:hover .hover-service {
   opacity: 1;
   visibility: visible;
 }
@@ -281,7 +348,7 @@ table {
 .header .container .lang .hover-tr ul li a:hover {
   color: white;
   padding-left: 5px;
-  transition: 0.5s;
+  transition: all 0.4s ease;
 }
 .header .container .lang .hover-tr ul li a:hover::after {
   content: "";
@@ -291,7 +358,6 @@ table {
   position: absolute;
   left: -5px;
   top: 5px;
-  transition: 0.4s;
 }
 .header .container .lang:hover .hover-tr {
   visibility: visible;
@@ -659,8 +725,12 @@ table {
   font-style: italic;
 }
 
-.page-title {
+.career-title {
   margin-top: 170px;
+  display: flex;
+  align-items: flex-end;
+  height: 120px;
+  position: relative;
 }
 
 .career {
@@ -797,4 +867,392 @@ table {
   border: 3px solid #fafafa;
   padding: 10px 30px;
   transition: 0.4s;
+}
+
+.denizyolu {
+  position: relative;
+}
+.denizyolu .bg {
+  height: 415px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+.denizyolu .center-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, 0);
+  background-color: #2B5FAB;
+  width: 705px;
+  height: 186px;
+  mix-blend-mode: hard-light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.denizyolu .center-bottom::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 70px;
+  background-color: #fc5447;
+  top: 0;
+  transform: translate(0, -70%);
+}
+.denizyolu .center-bottom::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 16px;
+  background-color: #fc5447;
+  bottom: -16px;
+}
+.denizyolu .center-bottom h1 {
+  font-weight: 300;
+  font-size: 55px;
+  color: #fc5447;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.denizyolu .center-bottom li {
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff !important;
+}
+.denizyolu .center-bottom li a {
+  color: #fff;
+}
+
+.deniz-text {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.deniz-text h2 {
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 50px;
+  padding: 0 120px;
+  line-height: 1.2;
+  text-align: center;
+}
+.deniz-text p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  color: #6c6c6c;
+  text-align: center;
+}
+.deniz-text p span {
+  font-weight: bolder;
+}
+
+.depo {
+  position: relative;
+}
+.depo .bg {
+  height: 415px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+.depo .center-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, 0);
+  background-color: #2B5FAB;
+  width: 705px;
+  height: 186px;
+  mix-blend-mode: hard-light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.depo .center-bottom::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 70px;
+  background-color: #fc5447;
+  top: 0;
+  transform: translate(0, -70%);
+}
+.depo .center-bottom::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 16px;
+  background-color: #fc5447;
+  bottom: -16px;
+}
+.depo .center-bottom h1 {
+  font-weight: 300;
+  font-size: 55px;
+  color: #fc5447;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.depo .center-bottom li {
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff !important;
+}
+.depo .center-bottom li a {
+  color: #fff;
+}
+
+.depo-text {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.depo-text h2 {
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 50px;
+  padding: 0 120px;
+  line-height: 1.2;
+  text-align: center;
+}
+.depo-text p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  color: #6c6c6c;
+  text-align: center;
+}
+
+.karayolu {
+  position: relative;
+}
+.karayolu .bg {
+  height: 415px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+.karayolu .center-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, 0);
+  background-color: #2B5FAB;
+  width: 705px;
+  height: 186px;
+  mix-blend-mode: hard-light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.karayolu .center-bottom::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 70px;
+  background-color: #fc5447;
+  top: 0;
+  transform: translate(0, -70%);
+}
+.karayolu .center-bottom::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 16px;
+  background-color: #fc5447;
+  bottom: -16px;
+}
+.karayolu .center-bottom h1 {
+  font-weight: 300;
+  font-size: 55px;
+  color: #fc5447;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.karayolu .center-bottom li {
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff !important;
+}
+.karayolu .center-bottom li a {
+  color: #fff;
+}
+
+.kara-text {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.kara-text h2 {
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 50px;
+  padding: 0 120px;
+  line-height: 1.2;
+  text-align: center;
+}
+.kara-text p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  color: #6c6c6c;
+  text-align: center;
+}
+.kara-text p span {
+  font-weight: bolder;
+}
+.kara-text i {
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  color: #DEDEDE;
+}
+
+.container-fluid h3 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+  position: relative;
+  margin-bottom: 40px;
+}
+.container-fluid p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  color: #6c6c6c;
+}
+.container-fluid .up-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 80px 0 300px;
+  text-align: right;
+}
+.container-fluid .up-text h3 {
+  padding-right: 20px;
+}
+.container-fluid .up-text h3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: #FC5447;
+  width: 10px;
+  height: 10px;
+}
+.container-fluid .up-pic {
+  height: 270px;
+  position: relative;
+}
+.container-fluid .up-pic::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  background: #2B5FAB;
+  mix-blend-mode: hard-light;
+}
+.container-fluid .down-pic {
+  height: 290px;
+  position: relative;
+}
+.container-fluid .down-pic::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background: #C32B24;
+  mix-blend-mode: hard-light;
+}
+.container-fluid .down-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 300px 0 80px;
+}
+.container-fluid .down-text h3 {
+  padding-left: 20px;
+}
+.container-fluid .down-text h3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: #FC5447;
+  width: 10px;
+  height: 10px;
+}
+
+.tır {
+  margin-top: 130px;
+  margin-bottom: 100px;
+}
+.tır h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 50px;
+  position: relative;
+}
+.tır h1::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  background: #FC5447;
+  width: 10px;
+  height: 10px;
+}
+
+.kart-body {
+  width: 370px;
+  height: 450px;
+  border: 3px solid #FAFAFA;
+}
+.kart-body .image-body {
+  background-color: #FAFAFA;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+.kart-body .image-body img {
+  max-width: 270px;
+  filter: invert(1) grayscale(1);
+  mix-blend-mode: darken;
+}
+.kart-body .image-body p {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  background-color: #fff;
+  padding: 10px 30px;
+  color: #2B5FAB;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+}
+.kart-body .p-body {
+  font-weight: 300;
+  font-size: 15px;
+}
+.kart-body .p-body p {
+  line-height: 30px;
+  text-align: center;
+}
+.kart-body .fa-solid {
+  color: red;
+  align-self: flex-end;
 }/*# sourceMappingURL=style.css.map */

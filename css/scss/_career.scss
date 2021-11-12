@@ -1,5 +1,9 @@
-.page-title {
+.career-title {
     margin-top: 170px;
+    display: flex;
+    align-items: flex-end;
+    height: 120px;
+    position: relative;
 }
 
 .career {
@@ -75,7 +79,7 @@
 
     }
 
-    
+
 }
 
 .btn {
@@ -130,7 +134,8 @@
     background-color: #2b5fab;
 
 }
-.file-container{
+
+.file-container {
     position: relative;
 }
 

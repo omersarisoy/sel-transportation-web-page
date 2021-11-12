@@ -108,9 +108,6 @@
                     &:hover {
                         color: #fc5447;
                     }
-
-
-
                 }
 
                 .hover-menu {
@@ -119,9 +116,8 @@
                     border-radius: 1rem;
                     position: absolute;
                     left: 50%;
-                    bottom: -8rem;
                     padding: 25px 20px 25px 35px;
-                    transform: translate(-50%, 0);
+                    transform: translate(-50%, 25%);
                     opacity: 0;
                     visibility: hidden;
                     transition: all .4s ease;
@@ -151,7 +147,7 @@
                                 &:hover {
                                     color: white;
                                     padding-left: 8px;
-                                    transition: .5s;
+                                    transition: all .4s ease;
 
                                     &::after {
                                         content: "";
@@ -161,7 +157,6 @@
                                         position: absolute;
                                         left: -5px;
                                         top: 5px;
-                                        transition: .4s;
                                     }
 
                                 }
@@ -170,8 +165,90 @@
                     }
                 }
 
+                .hover-service {
+                    background-color: #2b5fab;
+                    width: 350px;
+                    border-radius: 1rem;
+                    position: absolute;
+                    left: 50%;
+                    bottom: -2rem;
+                    padding: 25px 20px 25px 35px;
+                    transform: translate(-50%, 100%);
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all .4s ease;
+
+                    ul {
+                        position: relative;
+
+                        &::after {
+                            content: "";
+                            width: 10px;
+                            height: 10px;
+                            background-color: #fc5447;
+                            position: absolute;
+                            top: -40px;
+                            right: 50%;
+
+                        }
+                        li {
+                            padding-bottom: 10px;
+
+                            a {
+                                font-size: 15px;
+                                color: rgba(255, 255, 255, 0.6);
+                                position: relative;
+
+                                &:hover {
+                                    color: white;
+                                    padding-left: 8px;
+                                    transition: all .4s ease;
+
+                                    &::after {
+                                        content: "";
+                                        width: 5px;
+                                        height: 5px;
+                                        background-color: #fc5447;
+                                        position: absolute;
+                                        left: -5px;
+                                        top: 5px;
+                                    }
+
+                                }
+                            }
+                        }
+
+                        p {
+                            color: #fff;
+                            position: relative;
+                            padding-left: 20px;
+                            margin-top: 10px;
+                            margin-bottom: 20px;
+                            font-weight: bold;
+                            font-size: 15px;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                width: 10px;
+                                height: 10px;
+                                background-color: white;
+                                left: 0;
+                                top: 2px;
+                            }
+                        }
+                    }
+
+
+                }
+
+
                 &:hover {
                     .hover-menu {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+
+                    .hover-service {
                         opacity: 1;
                         visibility: visible;
                     }
@@ -186,7 +263,6 @@
         }
 
         .lang {
-
             >a {
                 color: #000;
                 font-weight: bold;
@@ -231,8 +307,7 @@
                             &:hover {
                                 color: white;
                                 padding-left: 5px;
-                                transition: .5s;
-
+                                transition: all .4s ease;
                                 &::after {
                                     content: "";
                                     width: 5px;
@@ -241,7 +316,6 @@
                                     position: absolute;
                                     left: -5px;
                                     top: 5px;
-                                    transition: .4s;
                                 }
 
                             }

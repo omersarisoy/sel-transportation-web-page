@@ -1,0 +1,90 @@
+.denizyolu {
+    position: relative;
+
+    .bg {
+        height: 415px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        filter: grayscale(100%);
+
+    }
+
+    .center-bottom {
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transform: translate(50%, 0);
+        background-color: #2B5FAB;
+        width: 705px;
+        height: 186px;
+        mix-blend-mode: hard-light;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 7px;
+            height: 70px;
+            background-color: #fc5447;
+            top: 0;
+            transform: translate(0, -70%);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 16px;
+            background-color: #fc5447;
+            bottom: -16px;
+        }
+
+        h1 {
+            font-weight: 300;
+            font-size: 55px;
+            color: #fc5447;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        li {
+            font-weight: 300;
+            font-size: 20px;
+            color: #fff !important;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+}
+
+.deniz-text {
+    margin-top: 130px;
+    margin-bottom: 130px;
+
+    h2 {
+        font-size: 30px;
+        color: #000;
+        margin-bottom: 50px;
+        padding: 0 120px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 25px;
+        color: #6c6c6c;
+        text-align: center;
+
+        span {
+            font-weight: bolder;
+        }
+    }
+}
