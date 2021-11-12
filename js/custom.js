@@ -11,4 +11,7 @@ $(document).ready(function(){
       delay: 3000,
     },
   });
+  $('.yükle').click(function(){
+    $('.file-upload').trigger( "click" );
+  });
 });

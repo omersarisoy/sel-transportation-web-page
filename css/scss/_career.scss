@@ -1,0 +1,161 @@
+.page-title {
+    margin-top: 170px;
+}
+
+.career {
+    margin-top: 150px;
+    margin-bottom: 270px;
+    height: 500px;
+}
+
+.accordion {
+    margin-right: 50px;
+
+    .accordion-item {
+        border: none;
+    }
+
+    .accordion-button {
+        font-weight: bold;
+        color: #54585f;
+        background-color: #fff;
+        border-bottom: 1px solid #0E62E4;
+        padding: 5px;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+    }
+
+    .accordion-button.collapsed {
+        opacity: 0.6;
+        border-bottom: 1px solid #54585f;
+
+    }
+
+    .accordion-body {
+        padding: 25px 5px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 23px;
+        color: #909691
+    }
+
+    a {
+        float: right;
+        border: 3px solid #fafafa;
+        font-weight: bold;
+        font-size: 14px;
+        color: #2b5fab;
+        border-radius: 300px;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        float: right;
+        margin-bottom: 20px;
+    }
+}
+
+.form-control {
+    height: 50px;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #909691;
+    background-color: #fff;
+    border: 1px solid rgba(42, 95, 171, 0.60);
+    border-radius: 25px;
+
+    &:focus {
+        box-shadow: none;
+        color: #909691;
+
+
+    }
+
+    
+}
+
+.btn {
+    height: 50px;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #909691;
+    background-color: #fff;
+    border: 1px solid rgba(42, 95, 171, 0.60);
+    border-radius: 25px;
+
+    &:focus {
+        box-shadow: none;
+        color: #909691;
+        background-color: #fff;
+
+    }
+
+    &:hover {
+        box-shadow: none;
+        color: #909691;
+        background-color: #fff;
+        border: 1px solid rgba(42, 95, 171, 0.60);
+
+
+    }
+}
+
+.dropdown-toggle::after {
+    margin-left: 270px;
+}
+
+.dropdown-item {
+    width: 100%;
+    font-weight: 400;
+    color: white;
+    background-color: #2b5fab;
+
+    &:hover {
+        background-color: #2b5fab;
+        color: white;
+
+
+    }
+}
+
+.dropdown-menu {
+    width: 370px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #2b5fab;
+
+}
+.file-container{
+    position: relative;
+}
+
+.yükle {
+    position: absolute;
+    right: 40px;
+    top: 40%;
+    color: #2b5fab;
+    font-size: 14px;
+}
+
+.textarea {
+    height: 180px;
+    padding: 15px 20px;
+}
+
+.submit {
+    margin-top: 30px;
+    float: right;
+    font-weight: bold;
+    font-size: 14px;
+    color: #2b5fab;
+    background: #fff0;
+    border-radius: 20px;
+    border: 3px solid #fafafa;
+    padding: 10px 30px;
+    transition: 0.4s;
+}

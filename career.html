@@ -12,36 +12,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
 
 
 <body>
-    <header class="container-fluid">
-        <div class="header-container container">
-            <a href="#" class="search">ARA</a>
-            <a href="./">Anasayfa</a>
-            <a href="about.html" class="dot">Kurumsal</a>
-            <span></span>
-            <a href="https://www.seltransport.com/tr">
-                <img class="logo" src="https://www.seltransport.com/sellojistik/assets/img/main/logo.svg"
-                    alt="sel lojistik" />
-            </a>
-            <span></span>
-            <a href="career.html">Hizmetlerimiz</a>
-            <a href="#" class="dot">İletişim</a>
-            <a class="search"> TR
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.988 14.013">
-                    <g>
-                        <path data-name="Path 313"
-                            d="M104.839 7.7l-6.025 6.025a.981.981 0 0 1-1.388-1.388l5.331-5.331-5.331-5.331A.981.981 0 0 1 98.814.287l6.025 6.025a.981.981 0 0 1 0 1.387z"
-                            transform="translate(-97.139)"></path>
-                    </g>
-                </svg>
-            </a>
+    <header class="header">
+        <div class="container">
+            <ul>
+                <li class="search">
+                    <a href="javascript:;">
+                        ARA
+                    </a>
+                </li>
+                <li>
+                    <a href="./">Anasayfa
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">Kurumsal
+
+                    </a>
+                    <div class="hover-menu">
+                        <ul>
+                            <li><a href="about.html">Hakkımızda</a></li>
+                            <li><a href="career.html">Kariyer </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="./" class="logo">
+                        <img src="./image/logo.svg" alt="logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">Hizmetlerimiz
+
+                    </a>
+                </li>
+                <li>
+                    <a href="iletisim.html">İletişim
+
+                    </a>
+                </li>
+                <li class="lang">
+                    <a href="javascript:;">
+                        TR <i class="fa-solid fa-angle-down"></i>
+                    </a>
+
+                    <div class="hover-tr">
+                        <ul>
+                            <li><a href="">EN</a></li>
+                            <li><a href="">FR</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+            </ul>
         </div>
     </header>
-    <div class="header-wrapper"></div>
 
 
     <div class="page-title">
@@ -68,57 +98,102 @@
     </div>
 
     <div class="career">
-        <div class="container">
+        <div class="container ">
             <div class="row">
                 <div class="col-5">
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Accordion Item #1
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Accordion Item #2
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    GENEL
                                 </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <p>Paylaşacağınız bilgiler ve yükleyeceğiniz CV ile sizi farklı departmanlarımızdan
+                                        birinde uygun bir pozisyon için değerlendirmemiz adına bize fırsat sunduğunuz
+                                        için teşekkür ederiz!</p>
+
+                                    <a href="">Başvuru Yap</a>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-                <div class="col-7">
+                <div class="col-7 ">
+                    <div class="row gy-4">
+                        <div class="col-6">
+                            <input type="text" class="form-control" placeholder="Adınız, Soyadınız"
+                                aria-label="Adınız, Soyadınız">
+                        </div>
+                        <div class="col-6">
+                            <input type="email" class="form-control" placeholder="E Posta Adresiniz"
+                                aria-label="E Posta Adresiniz">
+                        </div>
 
+                        <div class="col-6">
+                            <input type="text" class="form-control" placeholder="Telefon" aria-label="Telefon">
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Genel
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Genel</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 file-container">
+                            <input type="file" hidden class="file-upload" />
+                            <input type="text" class="form-control" placeholder=".doc, .docx, .pdf yükleyebilirsiniz."
+                                aria-label="E Posta Adresiniz">
+                            <span class="yükle"> <i class="fas fa-caret-up"></i> CV Yükle</span>
+                        </div>
+
+                        <div class="col-12">
+                            <textarea class="form-control textarea" id="exampleFormControlTextarea1"
+                                placeholder="Kendinizi Tanıtınız"></textarea>
+                            </div>
+
+                            <div class="col-6">
+                                <form action="?" method="POST">
+                                    <div class="g-recaptcha" data-sitekey="6Ld8_SsdAAAAAJx0CniTLrU8OPRlJPHdqYINdG0B"></div>
+                                    <br />
+                                </form>
+                            </div>
+                            
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Güvenlik Kodu" aria-label="Güvenlik Kodu">
+                                <input class="submit" type="submit" value="Gönder">
+                            </div>
+                    </div>
+
+                    <!-- <div class="row">
+                    </div> -->
+
+                    <!-- <div class="row">
+
+                    </div> -->
+                    <!-- <div class="row">
+                    </div> -->
+
+                    <!-- <div class="row">
+
+                    </div> -->
                 </div>
             </div>
         </div>
     </div>
+
+    </div>
+    </div>
+    </div>
+
+    <!-- site key  6Ld8_SsdAAAAAJx0CniTLrU8OPRlJPHdqYINdG0B -->
+    <!-- secret key  6Ld8_SsdAAAAAIfdBAmomn3yOVdh5pnFzGMN_1T4 -->
 
 
 
@@ -152,16 +227,17 @@
             <a>Kişisel Verilerin Korunması</a>
             <a>Web Tasarım | <img src="https://www.seltransport.com/sellojistik/assets/img/main/biltek-imza.svg"
                     alt="biltek link" /></a>
-
-
         </div>
 
 
     </footer>
 
+    <script src="./js/jquery.js"></script>
+    <script src="./js/swiper.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+    <script src="./js/custom.js"></script>
 </body>
 
 
