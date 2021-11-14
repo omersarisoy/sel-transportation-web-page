@@ -22,9 +22,14 @@
         <div class="container">
             <ul>
                 <li class="search">
-                    <a href="javascript:;">
+                    <a href="javascript:;" class="search-button">
                         ARA
                     </a>
+                    <form class="search-box" method="POST" action="search.html">
+                        <input type="search" />
+                        <button>ARA</button>
+                        <span class="cross">X</span>
+                    </form>
                 </li>
                 <li>
                     <a href="./">Anasayfa
@@ -41,27 +46,39 @@
                     </div>
                 </li>
                 <li>
-                    <a href="./">
-                        <img src="./image/logo.svg" alt="logo">
+                    <div class="logo">
+                        <a href="./">
+                            <img src="./image/logo.svg" alt="logo">
+                        </a>
 
-                    </a>
+                    </div>
+                
+
                 </li>
                 <li>
                     <a href="javascript:;">Hizmetlerimiz
                     </a>
 
-                    <div class="hover-service">
+
+                    <div class="hover-service ">
                         <ul>
                             <p>İntermodal</p>
-                            <li><a href="deniz-yolu.html">Deniz yolu</a></li>
+                            <li><a href="deniz-yolu.html">Deniz yolu</a>
+                                <div style="background-image: url(./image/ship.png);"></div>
+                            </li>
                             <p>Taşımacılık</p>
-                            <li><a href="depo-yönetimi.html">Depo Yönetimi</a></li>
-                            <li><a href="kara-yolu.html">Kara Yolu</a></li>
+                            <li>
+                                <a href="depo-yönetimi.html">Depo Yönetimi</a>
+                                <div style="background-image: url(./image/konteyner.png);"></div>
+                            </li>
+                            <li><a href="kara-yolu.html">Kara Yolu</a>
+                                <div style="background-image: url(./image/lorry.png);"></div>
+                            </li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a class="dot" href="iletisim.html">İletişim
+                    <a class="dot" href="contact.html">İletişim
                     </a>
                 </li>
                 <li class="lang">
@@ -97,7 +114,7 @@
                     </div>
 
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination pagi"></div>
             </div>
         </div>
     </div>
@@ -140,14 +157,14 @@
                             <path
                                 d="M25.455,25.233a.69.69,0,0,0,.219.045c.016,0,.031.009.046.009a.69.69,0,0,0,.237-.046.613.613,0,0,0,.061-.029.7.7,0,0,0,.16-.106c.011-.009.025-.013.036-.024l4.355-4.355a.7.7,0,0,0-.986-.986l-4.024,4.024-3.612-1.513a.7.7,0,0,0-.54,1.287l4.044,1.693Z"
                                 transform="translate(-13.721 -13.925)" fill="#c32b24"></path>
-                        </svg> <span>Hakkımızda</span> </button>
+                        </svg>  <a href="about.html">Hakkımızda</a> </button>
 
                     <button> <svg xmlns="http://www.w3.org/2000/svg" width="19.162" height="19.161"
                             viewBox="0 0 19.162 19.161">
                             <path
                                 d="M17.1,6.013H14.651V4.129H18.6a.561.561,0,0,0,.379-.975L17.89,2.065,19,.958A.561.561,0,0,0,18.6,0H14.09a.561.561,0,0,0-.561.561V6.013h-.641a2.067,2.067,0,0,0-2.065,2.065v1.17a2.052,2.052,0,0,0-.942-.228h-.6a2.067,2.067,0,0,0-2.065,2.065v1.17a2.053,2.053,0,0,0-.942-.228h-.6A2.067,2.067,0,0,0,3.608,14.09v1.17a2.05,2.05,0,0,0-.942-.228h-.6A2.067,2.067,0,0,0,0,17.1v1.5a.561.561,0,0,0,.561.561H18.6a.561.561,0,0,0,.561-.561V8.077A2.067,2.067,0,0,0,17.1,6.013Zm-2.445-4.89h2.593l-.545.545a.561.561,0,0,0,0,.794l.545.545H14.651ZM1.123,17.1a.943.943,0,0,1,.942-.942h.6a.943.943,0,0,1,.942.942v.942H1.123Zm3.608,0V14.09a.943.943,0,0,1,.942-.942h.6a.943.943,0,0,1,.942.942v3.948H4.73ZM8.338,14.09V11.084a.943.943,0,0,1,.942-.942h.6a.943.943,0,0,1,.942.942v6.955H8.338Zm9.7,3.948H11.946V8.077a.943.943,0,0,1,.942-.942H17.1a.943.943,0,0,1,.942.942Zm0,0"
                                 fill="#c32b24"></path>
-                        </svg> <span>Kariyer</span> </button>
+                        </svg> <a href="career.html"> Kariyer</a> </button>
                 </div>
             </div>
 
@@ -175,7 +192,7 @@
                             transform="translate(-97.139)" fill="red"></path>
                     </g>
                 </svg>
-                İletişim
+               <a href="contact.html">İletişim</a> 
             </button>
         </div>
 

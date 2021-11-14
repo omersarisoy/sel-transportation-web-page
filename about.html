@@ -19,9 +19,14 @@
         <div class="container">
             <ul>
                 <li class="search">
-                    <a href="javascript:;">
+                    <a href="javascript:;" class="search-button">
                         ARA
                     </a>
+                    <form class="search-box" method="POST" action="search.html">
+                        <input type="search" />
+                        <button>ARA</button>
+                        <span class="cross">X</span>
+                    </form>
                 </li>
                 <li>
                     <a href="./">Anasayfa
@@ -38,27 +43,39 @@
                     </div>
                 </li>
                 <li>
-                    <a href="./">
-                        <img src="./image/logo.svg" alt="logo">
+                    <div class="logo">
+                        <a href="./">
+                            <img src="./image/logo.svg" alt="logo">
+                        </a>
 
-                    </a>
+                    </div>
+                
+
                 </li>
                 <li>
                     <a href="javascript:;">Hizmetlerimiz
                     </a>
 
-                    <div class="hover-service">
+
+                    <div class="hover-service ">
                         <ul>
                             <p>İntermodal</p>
-                            <li><a href="deniz-yolu.html">Deniz yolu</a></li>
+                            <li><a href="deniz-yolu.html">Deniz yolu</a>
+                                <div style="background-image: url(./image/ship.png);"></div>
+                            </li>
                             <p>Taşımacılık</p>
-                            <li><a href="depo-yönetimi.html">Depo Yönetimi</a></li>
-                            <li><a href="kara-yolu.html">Kara Yolu</a></li>
+                            <li>
+                                <a href="depo-yönetimi.html">Depo Yönetimi</a>
+                                <div style="background-image: url(./image/konteyner.png);"></div>
+                            </li>
+                            <li><a href="kara-yolu.html">Kara Yolu</a>
+                                <div style="background-image: url(./image/lorry.png);"></div>
+                            </li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a class="dot" href="iletisim.html">İletişim
+                    <a class="dot" href="contact.html">İletişim
                     </a>
                 </li>
                 <li class="lang">
@@ -107,7 +124,7 @@
     <div class="page-up">
         <div class="container">
             <div class="row ">
-                <div class="col-4  about-up-text">
+                <div class="col-5  about-up-text">
                     <div>
                         <h6>Sel Uluslararası Taşımacılık Şirketi, tecrübelerini genç ve dinamik bir şirket olarak sunmak
                             üzere
@@ -180,7 +197,7 @@
                             transform="translate(-97.139)" fill="red"></path>
                     </g>
                 </svg>
-                İletişim
+               <a href="contact.html">İletişim</a> 
             </button>
         </div>
 
@@ -192,8 +209,6 @@
             <a>Kişisel Verilerin Korunması</a>
             <a>Web Tasarım | <img src="https://www.seltransport.com/sellojistik/assets/img/main/biltek-imza.svg"
                     alt="biltek link" /></a>
-
-
         </div>
 
 

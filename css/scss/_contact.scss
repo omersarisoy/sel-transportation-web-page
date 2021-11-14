@@ -1,0 +1,181 @@
+.iletişim-title {
+    display: flex;
+    align-items: flex-end;
+    height: 120px;
+    position: relative;
+
+    h1 {
+        font-weight: 300;
+        font-size: 55px;
+        color: #000;
+        position: relative;
+        padding-left: 20px;
+        
+        &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: #fc5447;
+            position: absolute;
+            left: 0;
+            top: 20px;
+        }
+    }
+}
+
+.iletişim {
+    margin-top: 150px;
+    margin-bottom: 200px;
+    height: 350px;
+
+}
+
+.communication {
+    // border: 3px solid red;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    
+    > div {
+        border-bottom: 1px solid #DEDEDE;
+        display: flex;
+        margin-bottom: 50px;
+
+        p {
+            line-height: 20px;
+        }
+
+        div {
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        i {
+            color: rgb(43, 95, 171);
+            font-size: 30px;
+            padding-right: 30px;
+        }
+
+        .fa-solid {
+            color: red;
+            font-size: 10px;
+
+            
+        }
+
+        a { 
+            margin-bottom: 30px;
+            font-size: 15px;
+            color: #5c5a5a;
+            line-height: 25px;
+
+            &:hover {
+                color: #c32b24;
+            }
+        }
+     
+        
+    }
+}
+
+
+.information {
+    display: flex;
+    justify-content: space-between;
+
+  
+   
+}
+.form-control-com {
+    height: 50px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #909691;
+    background-color: #fff;
+    border: none;
+    border-bottom: 2px solid #DEDEDE;
+    width: 100%;
+    padding-left: 30px;
+
+
+
+    &:focus {
+        box-shadow: none;
+        color: #909691;
+        outline: none;
+    }
+
+
+}
+
+
+
+
+.submit {
+    margin-top: 30px;
+    float: right;
+    font-weight: bold;
+    font-size: 14px;
+    color: #2b5fab;
+    background: #fff0;
+    border-radius: 20px;
+    border: 3px solid #fafafa;
+    padding: 15px 30px;
+    transition: 0.4s;
+
+    &:hover {
+        background-color: #fafafa;
+    }
+
+    i {
+        margin-left: 10px;
+    }
+}
+
+.ad-soyad {
+    position: relative;
+
+    i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(100%, 100%);
+    }
+}
+
+.mail {
+    position: relative;
+
+    i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(100%, 100%);
+        
+    }
+}
+
+.comment {
+    position: relative;
+
+    i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(100%, 100%);
+    }
+
+    .textarea {
+        height: 130px;
+        width: 100%;
+    }
+}
+
+.security-code {
+    margin-top: 25px;
+}
+
+
+

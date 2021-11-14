@@ -1,11 +1,26 @@
 .career-title {
-    margin-top: 170px;
     display: flex;
     align-items: flex-end;
     height: 120px;
     position: relative;
+    h1 {
+        font-weight: 300;
+        font-size: 55px;
+        color: #000;
+        position: relative;
+        padding-left: 20px;
+        
+        &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: #fc5447;
+            position: absolute;
+            left: 0;
+            top: 20px;
+        }
+    }
 }
-
 .career {
     margin-top: 150px;
     margin-bottom: 270px;
@@ -13,7 +28,7 @@
 }
 
 .accordion {
-    margin-right: 50px;
+    margin-left: 80px;
 
     .accordion-item {
         border: none;

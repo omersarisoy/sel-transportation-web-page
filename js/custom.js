@@ -4,7 +4,7 @@ $(document).ready(function(){
       el: ".swiper-pagination",
       clickable: true,
       renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + "</span>";
+        return '<span class="' + className + '"> <span class="side">'+ (index + 1) + '</span></span>';
       },
     },
     autoplay: {
@@ -13,5 +13,13 @@ $(document).ready(function(){
   });
   $('.yükle').click(function(){
     $('.file-upload').trigger( "click" );
+  });
+
+  $('.search-button').click(function() {
+    $('.search-box').addClass('ses');
+  });
+
+  $('.cross').click(function() {
+    $('.search-box').removeClass('ses');
   });
 });
