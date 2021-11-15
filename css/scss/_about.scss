@@ -91,7 +91,7 @@
       height: 100px;
       background-color: #2b5fab;
       position: absolute;
-      opacity: 0.8;
+      mix-blend-mode: hard-light;
   }
 }
 
@@ -123,11 +123,11 @@
 
 
 .about-down-image {
-  height: 500px;
+  height: 510px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-right: 80px;
+  margin-right: 60px;
 
 }
 

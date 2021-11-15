@@ -219,7 +219,7 @@ table {
 .header .container > ul > li a {
   font-size: 20px;
   color: rgba(0, 0, 0, 0.58);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .header .container > ul > li a:hover {
@@ -412,6 +412,8 @@ table {
   color: #000;
   font-weight: bold;
   font-size: 12px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .header .container .search .search-box {
@@ -433,6 +435,8 @@ table {
   padding: 15px 60px 15px 60px;
   width: 450px;
   background: #fff;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .header .container .search .search-box input:focus {
@@ -453,6 +457,8 @@ table {
   background: #fff0;
   font-weight: bold;
   outline: none !important;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .header .container .search .search-box span {
@@ -468,11 +474,15 @@ table {
   background: #fff0;
   font-size: 20px;
   cursor: pointer;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .header .container .search .search-box.ses {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .header .container .lang > a {
@@ -625,6 +635,7 @@ table {
 }
 
 .footer-up a {
+  font-weight: 300;
   font-size: 25px;
   color: #0d0d0d;
 }
@@ -658,10 +669,14 @@ table {
 .iletişim-button:hover {
   color: white;
   background: black;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
 }
 
 .iletişim-button:hover a {
   color: white;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
 }
 
 .footer-down {
@@ -677,9 +692,31 @@ table {
   padding: 50px 0;
 }
 
+.footer-down p {
+  font-size: 15px;
+  color: #585858;
+}
+
 .footer-down p span {
   color: black;
   font-weight: bold;
+}
+
+.footer-down a {
+  font-size: 12px;
+  color: #585858;
+}
+
+.footer-down a:hover {
+  color: #fc5447;
+}
+
+.footer-down a:hover:last-of-type {
+  color: #585858;
+}
+
+.footer-down a img {
+  margin-top: -10px;
 }
 
 .right-part {
@@ -735,9 +772,61 @@ table {
   font-size: 17px;
 }
 
+.right-part button:hover {
+  background-color: #fafafa;
+}
+
 .right-part button a {
   margin-left: 10px;
   color: #2b5fab;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero .social-media {
+  position: absolute;
+  top: 20%;
+  left: 3rem;
+  z-index: 99;
+}
+
+.hero .social-media li {
+  margin-bottom: 7rem;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: relative;
+}
+
+.hero .social-media li :hover {
+  color: #fc5447;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.hero .social-media li a {
+  font-size: 12px;
+  color: #000;
+}
+
+.hero .social-media li .twit {
+  position: relative;
+  background-color: white;
+  padding: 0 10px;
+}
+
+.hero .social-media li .twit::after {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 1px;
+  background-color: #DEDEDE;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: -99;
 }
 
 .hero .swiper {
@@ -804,12 +893,13 @@ table {
   bottom: 0;
   width: 1px;
   height: 100%;
-  background-color: red;
+  background-color: #b4b4b4;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
 
 .hero .pagi .swiper-pagination-bullet {
+  z-index: 90;
   margin-bottom: 7rem;
   background-color: #000000;
   color: #fff;
@@ -972,7 +1062,7 @@ table {
   height: 100px;
   background-color: #2b5fab;
   position: absolute;
-  opacity: 0.8;
+  mix-blend-mode: hard-light;
 }
 
 .about-up-text {
@@ -1009,11 +1099,11 @@ table {
 }
 
 .about-down-image {
-  height: 500px;
+  height: 510px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-right: 80px;
+  margin-right: 60px;
 }
 
 .picture {
@@ -1736,12 +1826,9 @@ table {
   text-align: center;
 }
 
-.kart-body .p-body {
+.kart-body .lorry-text {
   font-weight: 300;
   font-size: 15px;
-}
-
-.kart-body .p-body p {
   line-height: 30px;
   text-align: center;
 }
@@ -1804,15 +1891,21 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 65px;
+}
+
+.communication > div:last-of-type {
+  border-bottom: none;
 }
 
 .communication > div p {
   line-height: 20px;
+  font-size: 15px;
+  color: #5c5a5a;
 }
 
 .communication > div div {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1903,6 +1996,7 @@ table {
   left: 0;
   -webkit-transform: translate(100%, 100%);
           transform: translate(100%, 100%);
+  color: #909691;
 }
 
 .mail {
@@ -1915,6 +2009,7 @@ table {
   left: 0;
   -webkit-transform: translate(100%, 100%);
           transform: translate(100%, 100%);
+  color: #909691;
 }
 
 .comment {
@@ -1927,6 +2022,7 @@ table {
   left: 0;
   -webkit-transform: translate(100%, 100%);
           transform: translate(100%, 100%);
+  color: #909691;
 }
 
 .comment .textarea {

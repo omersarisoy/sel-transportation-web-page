@@ -10,7 +10,7 @@
         color: #000;
         position: relative;
         padding-left: 20px;
-        
+
         &::before {
             content: "";
             width: 10px;
@@ -36,18 +36,25 @@
     padding-right: 100px;
     display: flex;
     flex-direction: column;
-    
-    > div {
+
+    >div {
         border-bottom: 1px solid #DEDEDE;
         display: flex;
-        margin-bottom: 50px;
+        margin-bottom: 65px;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+
 
         p {
             line-height: 20px;
+            font-size: 15px;
+            color: #5c5a5a;
         }
 
         div {
-            margin-bottom: 30px;
+            margin-bottom: 50px;
             display: flex;
             align-items: center;
         }
@@ -62,10 +69,10 @@
             color: red;
             font-size: 10px;
 
-            
+
         }
 
-        a { 
+        a {
             margin-bottom: 30px;
             font-size: 15px;
             color: #5c5a5a;
@@ -75,8 +82,8 @@
                 color: #c32b24;
             }
         }
-     
-        
+
+
     }
 }
 
@@ -85,9 +92,10 @@
     display: flex;
     justify-content: space-between;
 
-  
-   
+
+
 }
+
 .form-control-com {
     height: 50px;
     font-size: 14px;
@@ -142,6 +150,7 @@
         top: 0;
         left: 0;
         transform: translate(100%, 100%);
+        color:#909691 ;
     }
 }
 
@@ -153,7 +162,9 @@
         top: 0;
         left: 0;
         transform: translate(100%, 100%);
-        
+        color:#909691 ;
+
+
     }
 }
 
@@ -165,6 +176,8 @@
         top: 0;
         left: 0;
         transform: translate(100%, 100%);
+        color:#909691 ;
+
     }
 
     .textarea {
@@ -176,6 +189,3 @@
 .security-code {
     margin-top: 25px;
 }
-
-
-
